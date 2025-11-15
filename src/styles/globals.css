@@ -1,0 +1,64 @@
+/* Global resets and variables */
+@import './variables.css';
+
+:root {
+  scroll-behavior: smooth;
+}
+
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+body {
+  margin: 0;
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-main);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container { max-width: 1200px; }
+
+/* Accent gradient utility */
+.accent-gradient {
+  background: radial-gradient(1200px 600px at 10% 10%, rgba(0,194,203,0.12), transparent 60%),
+              radial-gradient(900px 500px at 90% 30%, rgba(0,194,203,0.08), transparent 60%);
+}
+
+/* Uppercase headline style */
+.h-title {
+  letter-spacing: .06em;
+}
+
+/* Custom cursor base */
+#custom-cursor {
+  position: fixed;
+  top: 0; left: 0;
+  width: 18px; height: 18px;
+  border-radius: 50%;
+  background: var(--text-color);
+  mix-blend-mode: difference;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+}
+#custom-cursor.is-hover {
+  width: 42px; height: 42px;
+}
+
+/* Section spacing */
+.section {
+  padding: 120px 0;
+}
+
+/* Cards */
+.card {
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+}
+
+/* Dark blocks */
+.block-dark {
+  background: #0b0b0b;
+  color: #f4f4f5;
+}

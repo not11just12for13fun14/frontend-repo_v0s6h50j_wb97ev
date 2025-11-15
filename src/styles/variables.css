@@ -1,0 +1,20 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #111111;
+  --accent-color: #00C2CB;
+  --muted-color: #6b7280; /* gray-500 */
+  --surface: #0b0b0b; /* for dark panels */
+  --radius: 14px;
+  --shadow-soft: 0 10px 30px rgba(0,0,0,0.08);
+  --shadow-strong: 0 20px 60px rgba(0,0,0,0.12);
+  --font-main: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/***** Dark theme helper (optional) *****/
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #0a0a0a;
+    --text-color: #f5f5f5;
+    --surface: #0f0f10;
+  }
+}
